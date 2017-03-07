@@ -43,4 +43,4 @@ git push -u origin master
 
 不过明白得也不算晚，就从现在开始。
 
-<center>![Photography](/Users/tangxiaoyin/banburytang.github.io/assets/images/photography.jpg)</center>
+![Photography](/Users/tangxiaoyin/banburytang.github.io/assets/images/photography.jpg)
