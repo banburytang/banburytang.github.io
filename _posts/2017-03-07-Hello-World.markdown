@@ -11,9 +11,7 @@ tags: 班布里行纪
 
 从 CSDN 博客到用 WordPress、简书、字里行间，再到如今的 GitHub Pages，为着写博客这事儿，颇为曲折。Google 了许多资料，在 MacBook 的终端里敲了许多我似懂非懂的命令，在三七女生节这天，终于将这个小窝建成了。作为一个计算机专业毕业的人，想来真是惭愧得很。
 
-<center>![homepage](http://img.blog.csdn.net/20170307184838201)</center>
-
-<center>*『班布里行纪』首页，背景樱花为喵神摄于日本*</center>
+![『班布里行纪』首页，背景樱花为喵神摄于日本](http://img.blog.csdn.net/20170307184838201)
 
 ## 『班布里行纪』初长成
 
@@ -47,6 +45,4 @@ git push -u origin master
 
 不过明白得也不算晚，就从现在开始。
 
-<center>![Banbury](http://img.blog.csdn.net/20170307185055617)</center>
-
-<center>*2016 年摄于北京杜莎夫人蜡像馆*</center>
+![2016 年摄于北京杜莎夫人蜡像馆](http://img.blog.csdn.net/20170307185055617)
