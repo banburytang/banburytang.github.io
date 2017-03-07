@@ -1,13 +1,10 @@
-# Vno - Jekyll
+# 班布里行纪
 
-[Vno Jekyll](https://github.com/onevcat/vno-jekyll) is a theme for [Jekyll](http://jekyllrb.com). It is a port of my Ghost theme [vno](https://github.com/onevcat/vno), which is originally developed from [Dale Anthony's Uno](https://github.com/daleanthony/uno).
+banburytang.github.io 是[@唐门教主](http://weibo.com/txydonyin) 的个人博客，仿[喵神博客](https://onevcat.com/)，采用 [Vno Jekyll 主题](https://github.com/onevcat/vno-jekyll)，欢迎访问。
 
-## Live Demo
+参考资源：
 
-See [Vno - Jekyll](http://vno.onevcat.com) site and [my blog](http://onevcat.com).
+1. [Hello World - Vno](http://vno.onevcat.com/2016/02/hello-world-vno/)；
+2. [用 Jekyll 搭建的 Github Pages 个人博客](http://louisly.com/2016/04/used-jekyll-to-create-my-github-blog/)。
 
-You can also find some instruction as well as other sites using Vno theme in [this page](http://vno.onevcat.com/2016/02/hello-world-vno/).
-
-## Licence
-
-Great thanks to [Dale Anthony](https://github.com/daleanthony) and his [Uno](https://github.com/daleanthony/uno). Vno Jekyll is based on Uno, and contains a lot of modification on page layout, animation, font and some more things I can not remember. Vno Jekyll is followed with Uno and be licensed as [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/). See the link for more information.
+感谢伟大的 GitHub、Google，感谢一面分享一面沉淀的 Developers，感谢曾经的老师们。
