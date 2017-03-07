@@ -1,11 +1,10 @@
 # Basic
-title: Vno Jekyll
-subtitle: A blog-orientation theme for Jekyll
-welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: Vno Jekyll is a port of my Ghost theme vno.
-creator: <a href="http://onev.cat">@onevcat</a>
+title: 班布里行纪
+subtitle: 谨以感恩之心，怀孺孩童心性
+description: 嗨，我是唐雨时花 (@唐门教主)，英文名：Banbury Tang，取自英国牛津郡的 Banbury。爱开发但技术渣，爱写文但太随性，喜欢读古龙书，经常逛 GitHub，极度热爱清蒸鲈鱼，并终于自力更生地学会了这道菜。
+creator: <a href="https://banburytang.github.io/">@唐门教主</a>
 
-url: "http://vno.onevcat.com"
+url: "https://banburytang.github.io/"
 
 permalink: /:year/:month/:title/
 
@@ -13,37 +12,25 @@ permalink: /:year/:month/:title/
 highlighter: rouge
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: red
+cover_color: 
 
-# The blog button should not be removed.
 blog_button:
-    title: Blog
-    description: Visit blog
-
-# Navigation buttons in the front page.
+    title: 阅读
+    description: 儿时凿壁借了谁家的光
+    
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
-    # - {title: Another Button, description: A button, url: 'http://example.com'}
+    - {title: 学习, description: 更好的自己, url: 'https://banburytang.github.io/study/'}
+    - {title: 旅行摄影, description: 有趣的灵魂, url: 'https://banburytang.github.io/travel/'}
+    - {title: 关于, description: 了解更多关于我, url: 'https://banburytang.github.io/about/'}
 
 # Pagination
 gems: [jekyll-paginate]
 paginate: 10
 paginate_path: "page/:num/"
 
-# Comment
-comment:
-    disqus: vno-jekyll
-    # duoshuo: 
-    
 # Social
 social:
-    weibo: onevcat
-    github: onevcat
-    twitter: onevcat
-    gplus: 107108267983477358170
-    mail: onev@onevcat.com
-
-# Google Analytics
-ga:
-    # id: your_ga_id
-    # host: your_host
+    weibo: 唐门教主
+    github: banburytang
+    twitter: banburytang
+    mail: donyintxy@gmail.com
