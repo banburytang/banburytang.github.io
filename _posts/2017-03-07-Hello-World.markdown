@@ -2,7 +2,7 @@
 layout: post
 title: Hello World!
 date: 2017-03-07 17:30:00.000000000 +09:00
-tags: GitHub Jekyll Banbury
+tags: 班布里行纪
 ---
 
 ## 小引
@@ -17,9 +17,16 @@ tags: GitHub Jekyll Banbury
 
 > 采用 [Vno - Jekyll](https://github.com/onevcat/vno-jekyll) 作为主题，您可以在 GitHub 找到[本站源码](https://github.com/onevcat/OneV-s-Den)。
 
-好奇心驱使下研究了好几个小时，不禁感慨喵神真是『三好』idol，学习 Swift 看他的博客，学着搭建有品质的博客也看他的 GitHub，膜拜。同时，还 Google 到了 Louis 的这篇《用 Jekyll 搭建的 Github Pages 个人博客》，便一步一步地操作下来，还好，总算成功了。
+好奇心驱使下研究了好几个小时，不禁感慨喵神真是『三好』idol，学习 Swift 看他的博客，学着搭建有品质的博客也看他的 GitHub，膜拜。同时，还 Google 到了 Louis 的这篇《[用 Jekyll 搭建的 Github Pages 个人博客](http://louisly.com/2016/04/used-jekyll-to-create-my-github-blog/)》，以及《[命令行 git 简单使用](http://walkginkgo.com/git/2015/03/07/git-easyuse.html)》，便一步一步地操作下来，还好，总算成功了。
 
-而在这过程中，我总算忆起了当年学 Ubantu 系统时，穆王爷所教的诸多命令，感谢曾经的老师们。
+```
+//Git 命令上传代码
+git add .
+git commit -a -m +msg
+git push -u origin master
+```
+
+而在这过程中，我总算忆起了当年学 Ubantu 系统时，穆王爷所教的诸多命令，感谢伟大的 Google，感谢一面分享一面沉淀的 Developers，感谢曾经的老师们。
 
 ## 向 idol 学习
 
@@ -36,4 +43,4 @@ tags: GitHub Jekyll Banbury
 
 不过明白得也不算晚，就从现在开始。
 
-<center>![Photography](/Users/tangxiaoyin/banburytang.github.io/assets/images/photography.jpeg)</center>
+<center>![Photography](/Users/tangxiaoyin/banburytang.github.io/assets/images/photography.jpg)</center>
