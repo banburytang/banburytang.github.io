@@ -15,13 +15,15 @@ highlighter: rouge
 cover_color: 
 
 blog_button:
-    title: 阅读
+    title: 人生四大目标：阅读、学习、旅行、摄影
     description: 儿时凿壁借了谁家的光
     
-nav:
-    - {title: 学习, description: 更好的自己, url: 'https://banburytang.github.io/study/'}
-    - {title: 旅行摄影, description: 有趣的灵魂, url: 'https://banburytang.github.io/travel/'}
-    - {title: 关于, description: 了解更多关于我, url: 'https://banburytang.github.io/about/'}
+/** 
+* （注释掉）nav:
+*    - {title: 学习, description: 更好的自己, url: 'https://banburytang.github.io/study/'}
+*    - {title: 旅行摄影, description: 有趣的灵魂, url: 'https://banburytang.github.io/travel/'}
+*    - {title: 关于, description: 了解更多关于我, url: 'https://banburytang.github.io/about/'}
+*/
 
 # Pagination
 gems: [jekyll-paginate]
