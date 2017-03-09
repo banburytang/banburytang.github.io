@@ -5,7 +5,6 @@ date: 2017-03-09 17:30:00.000000000 +09:00
 tags: iOS开发进阶之路
 ---
 
-# Just for Fun!我的 iOS 开发进阶之路
 > - 作者：[@唐门教主](http://weibo.com/txydonyin)，个人博客：<https://banburytang.github.io/>。
 > - 关于 iOS 开发、Swift，如果你有好的博客、文章，欢迎交流分享。
 
