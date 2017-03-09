@@ -25,7 +25,7 @@ tags: iOS开发进阶之路
 ## 官方
 
 1. Swift 官方博客：<https://swift.org/>
-2. Swift 编程语言指南：<https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html>
+2. Swift 编程语言指南：[英文](https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html)、[中文](http://wiki.jikexueyuan.com/project/swift/)
 3. 官方资源汇总，包括指南、视频、Demo 等：<https://developer.apple.com/swift/resources/>
 
 ## 优质社区
