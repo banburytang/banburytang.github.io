@@ -6,7 +6,7 @@ tags: 班布里行纪
 ---
 
 > 本文转载自[阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/04/you-and-your-research.html)，为《You and Your Research》的精简版，很便于阅读，分享到自己的博客上，只是希望能够有一点启发。
-
+> 
 > - 作者：理查德·汉明（Richard Hamming，美国数学家）
 > - 译者：未知
 > - 时间：1986年3月7日
