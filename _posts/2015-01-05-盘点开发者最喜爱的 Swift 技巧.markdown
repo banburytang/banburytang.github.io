@@ -1,0 +1,140 @@
+---
+layout: post
+title: 盘点开发者最喜爱的 Swift 技巧
+date: 2015-01-05 09:30:00.000000000 +09:00
+tags: 我与 Swift 的虐恋
+---
+
+> 这是一篇译文，原文来自：[Favorite Swift Tips & Tricks of 2014](https://realm.io/news/favorite-swift-tips-and-tricks-of-2014/)；
+> 
+> 本文首次发布在 [CSDN](http://www.csdn.net/article/2014-12-25/2823312-favorite-swift-tips-and-tricks)。
+
+## 写在前面
+
+【一段译者注】每每编译 Swift 的文章时，总有种花样作死的感觉。对于任何一个专业词汇，都要费尽心思地去 Google 查询，翻阅中英两版的《Swift Programming Language》，仔细对比。不过翻译完，成就感却比其他文章多得多。对 Swift 总有种莫名的好感，也许是因为是苹果粉，也许仅仅只是因为 Swift 本身。这篇文章在发布并在微博推广之后，得到了包括唐巧、SwiftLanguage 等在内的技术专家好评，起初非常忐忑的心也终于得以安定。
+
+----
+
+屈指算来，Swift 语言才发布半年左右，却已深得众多开发者的青睐，也有了许许多多的学习资源、项目和工具。在本文中，来自 objc.io、LinkedIn 等各个公司的软件工程师及资深开发者总结了自己在接触 Swift 过程中最喜爱的贴士与技巧，有些技巧即使是很早就入坑 Swift 的开发者都不知道，不妨一起来了解一下吧。
+
+### Natasha Murashev——Capital One iOS 工程师、[Natasha The Robot](http://natashatherobot.com/)博主
+
+当我在构建 iOS 应用时，Swift 能够允许更多的函数式编程方法，所以，为了能在改善 Swift 代码时做出更好的决策，我一直在学习函数式编程。迄今为止，我最喜欢的函数方面的 Swift 资源有：
+
+- [功能型函数](http://commandshift.co.uk/blog/2014/10/10/functional-functions/)——能轻松更改函数，让代码更独立、可测试。
+- [包装类型](http://www.objc.io/snippets/8.html)——我喜欢用可读且安全的类型别名来编写代码。
+- [类型设计](http://www.swiftcast.tv/articles/the-design-of-types)——在设计程序时大幅使用正确的类型，有利于编译器调试。
+- [Swift 中柯里化函数的运用](http://drewag.me/posts/practical-use-for-curried-functions-in-swift)——在 Haskell 中，某种类型的函数指针只能指向特定参数类型和数目以及返回值类型的函数，而 Swift 则允许`currying`或部分应用函数，从而实现代码块可重复使用。
+- [Swift 奇妙的差错处理](http://nomothetis.svbtle.com/error-handling-in-swift)——与 Objective-C 相比，我特别喜欢这种简单、可读性强而又安全的错误处理方式。
+- [面向对象编程直达车](http://fsharpforfunandprofit.com/posts/recipe-part2/)——它为在代码中进行错误处理提供了一种最快捷的方式，于程序猿而言，最幸福之事莫过于此。
+- [Swift 函数式编程](http://www.objc.io/books/)——这是一本关于 Swift 函数比较深度的书籍，我每次重新读过时都会发现不一样的点，非常适合想要深入研究 Swift 函数以及如何将其运用到 iOS 代码中的开发者们阅读。
+
+### Chris Eidhof——objc.io 创始人、《Swift 函数式编程》作者
+
+[快速排序](http://www.objc.io/snippets/3.html)（Quicksort）——Swift 中的快速排序实现可以说是前无古人后无来者，大多数 Quicksort 实现都需使用固定的内存，而 Swift 则能以最简洁清晰的程序实现快排：
+
+```
+func qsort(input: [Int]) -> [Int] {  
+    if let (pivot, rest) = input.decompose {  
+        let lesser = rest.filter { $0 < pivot }  
+        let greater = rest.filter { $0 >= pivot }  
+        return qsort(lesser) + [pivot] + qsort(greater)  
+    } else {  
+        return []  
+    }  
+}  
+```
+
+### Austin Zheng——[LinkedIn](https://www.linkedin.com/) 高级软件工程师
+
+我认为，精妙的 Swift 技巧应当如此：开发者可以通过创建一个已定义标准类的闭包来为匿名类实例设置委托，而闭包则将返回该类的一个新实例，并运行。示例代码如下：
+
+```
+import Foundation   
+protocol SomeDelegateProtocol : class {  
+    func firstFunc() -> String  
+    func secondFunc() -> Bool  
+}  
+class MyClass {  
+    weak var delegate : SomeDelegateProtocol?  
+}  
+class Parent {  
+    var child : MyClass  
+    var strongDelegate : SomeDelegateProtocol? = nil  
+    func setup() {  
+        strongDelegate = {  
+            // [self]   // Original version had this not commented; it's commented to let people know it was a typo  
+            class SomethingClass : SomeDelegateProtocol {  
+                func firstFunc() -> String { return "foo" }  
+                func secondFunc() -> Bool { return true }  
+            }  
+            return SomethingClass()  
+        }()  
+        child.delegate = strongDelegate  
+    }  
+    init() {  
+        self.child = MyClass()  
+        self.setup()  
+    }  
+}  
+var bleh = Parent()  
+var result = bleh.child.delegate?.firstFunc()  
+println("Got \(result!)")  
+```
+
+### Clay Smith——[PagerDuty](http://pagerduty.com/) 高级软件工程师
+
+下面是我在处理所有 Xcode 问题（尤其是 sourcekit）时所使用的最基本的 Bash alias（命令别名），用来删除 Xcode 中的 Derived Data：
+
+```
+alias sourcekitsad='rm -rf ~/Library/Developer/Xcode/DerivedData'  
+```
+
+### Michael Helmbrecht——[Motiv](http://www.mymotiv.com/) UX 设计师兼 iOS 开发者
+
+于我而言，最喜欢的一点应该是 Swift 能在 String 类型和 NSString 类型中自动转换，当无法打印 String 时，通过直接调用 NSString 的-description 方法即可实现。
+
+### David Kobilnyk——[ShopRunner](https://www.shoprunner.com/)软件工程师
+
+作为一门编程语言，我觉得 Swift 还不够优雅，而我也并没有发现什么太特别的技巧，只是很喜欢原始类型、枚举一起使用，就像这样：
+
+```
+public enum ReminderTimeType: String {  
+    case Evening = "this evening"  
+    case Tomorrow = "tomorrow"  
+    case Weekend = "this weekend"  
+    case NextWeek = "next week"  
+    case CoupleWeeks = "in a couple weeks"  
+    case CoupleMonths = "in a couple months"  
+    case Someday = "someday"  
+    public static let array = [  
+        Evening, Tomorrow, Weekend, NextWeek, CoupleWeeks, CoupleMonths, Someday  
+    ]      
+    public static let rawArray = array.map { $0.rawValue }  
+}  
+```
+
+### Alexis Gallagher——高级 iOS 开发者
+
+要说我最喜欢的 Swift 技巧，应该有两个，一个是在 REPL 中，handy 函数可直接用于获取表达式静态类型，而想要获取任意实例值的类型名称则可直接调用`_stdlib_getDemangledTypeName`。
+
+```
+func typeof<T>(@autoclosure () -> T) -> Any.Type { return T.self }  
+```
+
+### JP Simard——[Realm](http://realm.io/) iOS 工程师
+
+开发者可以直接使用 nm 工具通过`libswiftCore.dylib`来获取所有私有的 Swift 标准库函数，比如`_stdlib_getTypeName()`、`_stdlib_demangleName()`和`_stdlib_conformsToProtocol()`：
+
+```
+cd `xcode-select -p`/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx  
+    nm -a libswiftCore.dylib | grep "T _swift_stdlib_"  
+```
+
+### Warren Moore——《[Metal By Example](http://metalbyexample.com/)》作者
+
+当结构体中的所有成员属于同一类型时（比如浮点型），通过 Swift，开发者可以将其中的同类数组作为一个指针指向结构体中的成员类型。这一方法，让我能够非常简便地去创建顶点数据的 Metal 缓冲区，而无需其他多余的复杂操作。
+
+### Mustafa Furniturewala——[Coursera](https://www.coursera.org/) 软件工程师
+
+我最喜欢的 Swift 资源是 [Swifter](http://swifter.natecook.com/)，对我来说，它是编程必备的参考指南，而最喜欢的技巧则是开发者可以使用任意的 Swift 函数来实现 Objective-C 风格的动态分配。
