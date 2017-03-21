@@ -17,7 +17,7 @@ tags: 好好学习
    
    ping URL/IP
  
-3. 转换目录
+3. 改变目录
    
    cd 目录路径
 
@@ -25,6 +25,18 @@ tags: 好好学习
    
    touch index.html
 
+5. 显示当前目录的路径名
+
+   pwd
+
+6. 显示当前目录的内容
+
+   ls
+
 ## Git 命令
 
 持续更新......
+
+## 相关资源
+
+- [Mac 终端常用命令](http://www.cnblogs.com/iphone520/archive/2012/03/26/2418468.html)
