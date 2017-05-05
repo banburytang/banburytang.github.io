@@ -1,8 +1,8 @@
 # Basic
 title: 班布里行纪
 subtitle: 谨以感恩之心，怀孺孩童心性
-description: 嗨，我是唐小引 (@唐门教主)，英文名：Banbury Tang，取自英国牛津郡的 Banbury。爱开发但技术渣，爱写文但太随性，喜欢读古龙书，经常逛 GitHub，极度热爱清蒸鲈鱼，并终于自力更生地学会了这道菜。
-creator: <a href="https://banburytang.github.io/">@唐门教主</a>
+description: 嗨，我是唐小引 (@唐雨时花)，英文名：Banbury Tang，取自英国牛津郡的 Banbury。爱开发但技术渣，爱写文但太随性，喜欢读古龙书，经常逛 GitHub，极度热爱清蒸鲈鱼，并终于自力更生地学会了这道菜。
+creator: <a href="https://banburytang.github.io/">@唐雨时花</a>
 
 url: "https://banburytang.github.io/"
 
@@ -25,7 +25,7 @@ paginate_path: "page/:num/"
 
 # Social
 social:
-    weibo: 唐门教主
+    weibo: 唐雨时花
     github: banburytang
     twitter: banburytang
     mail: donyintxy@gmail.com
