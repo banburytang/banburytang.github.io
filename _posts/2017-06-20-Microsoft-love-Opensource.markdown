@@ -1,0 +1,68 @@
+---
+layout: post
+title: 爱开源的微软是如何击败 Facebook、Google 成为 GitHub No.1 的？
+date: 2017-06-20 11:30:00.000000000 +09:00
+tags: 若为自由故
+---
+
+> 拥抱开源的微软这几年究竟都做了些什么？
+
+去年今月，我在微软开发者峰会上见到了《设计模式：可复用面向对象软件的基础》联合作者、现任微软技术院士（Technical Fellow at Microsoft）[Erich Gamma](https://zh.wikipedia.org/wiki/%E5%9F%83%E9%87%8C%E5%B8%8C%C2%B7%E4%BC%BD%E7%91%AA)，那是我第一次真正对「微软爱开源」的 Slogan 有了清晰而深刻的认识，从可在视窗、Linux 与 Mac 环境运行的 VS Code，基于 JavaScript、具备强型别的 TypeScript，到既开源也跨平台的 .NET Core 等，微软已然成为了开源领域的佼佼者。彼时还很好奇微软为什么会从封闭到积极拥抱开源，对此，Erich 如此言说：
+
+> 其实开源对于微软而言并非新鲜事物，只是方法和心态上发生了变化。过去，我们只是自己编写，自己维护产品。现在，既使用别人的，也提供给别人使用。开源对我们来说，就是一扇门，打开了就可以接触到更多的开发者。
+
+> 所以，微软爱开源，不只是使用到了很多开源的东西，我们也做了非常多的贡献。就像是“给”和“拿”的关系，这是一个非常重要的变化。我们不仅有完整的流程去使用现在的开源技术，也有完善的过程将我们的工具开放给大家使用。 
+
+从 PC 时代一路走来，曾经“因循守旧”到成为 Linux 和开源社区的头号敌人，颇让开发者嗤之以鼻的微软究竟如何在开源上发力甚至击败了 Facebook、Google 成为 GitHub 贡献第一的公司？而从诋毁开源到拥抱开源，为何微软会做出截然不同的开源战略转型？追本溯源，也许我们能够从微软开源历程的几个重大事件中找寻到答案。
+
+2004 年，基于 OSS 许可协议发布的 WiX 工具集成为了微软发布的第一个开源项目，该工具集包括了编译器、链接器、库工具和反编译器。
+
+2006 年，微软推出开源托管网站 CodePlex，在此网站所发布的所有程序都可以下载源码使用。尽管微软已经宣布此网站即将于[今年关闭](https://zh.wikipedia.org/wiki/CodePlex)，但不可否认的是，这是微软首次重要的开源社区尝试。
+
+2007 年，微软的开源许可证 Microsoft Public License (Ms-PL) 和 Microsoft Reciprocal License (Ms-RL) 得到了 OSI 认证。在一篇[文章](https://opensource.org/node/207)中，OSI 写道，“这个决定的通过获得了开源社区大多数人的认可（虽然还有不同意见），这些许可证符合开源定义的 10 项准则，所以应该通过。”
+
+2008 年，微软加入 Apache 软件基金会并成为白金会员，逐渐向开源 Web 服务器 Apache 项目靠拢。
+
+2009 年，微软向 Linux 内核贡献了超过两万行的代码。这些代码大大增强了在 Windows Server 2008 Hyper-V 或 Windows Server 2008 R2 Hyper-V 上运行的 Linux 操作系统虚拟机的性能。这些贡献让微软在一段较短的时间内成为了 Linux 内核排名第一的贡献者。
+
+2009 年，ASP.NET MVC 基于 Microsoft Public License 开源，这些代码没有平台限制，也可以被移植到 Java 或 Ruby 平台中去。
+
+2012 年，微软基于 Apache 2.0 许可证开源了它的部分 Web 产品体系，包括 ASP.NET MVC、Razor 和 Web API。
+
+2012 年，微软开源了用来强化 JavaScript 开发大型应用程序的工具语言 TypeScript，后来更被 Google 用于打造自家维护的下一代 JavaScript 应用程序框架 AngularJS。
+
+2012 年微软成立“微软开放技术有限公司（Microsoft Open Technologies Inc.）”，其主要目标是“推动公司在开放性方面的投入，包括互操作性、开放标准和开源”。
+
+还是在 2012 年，微软开源了用来强化 JavaScript 开发大型应用程序的工具语言 TypeScript，后来更被 Google 用于打造自家维护的下一代 JavaScript 应用程序框架 AngularJS。
+
+2014 年，微软云端和企业部门执行副总裁 Scott Guthrie 在 Connect() 会议上正式宣布.NET 核心将开源，包括 .NET Framework 4.6、.NET Core 5、还有 Runtime 和编译平台 Roslyn 等。这不是微软第一次宣布产品开源计划，但却是最让全球开发者震撼的一次宣布。
+
+同年，新上任的 CEO Satya Nadella 提出了“微软爱 Linux“，并加入了 OCP（Open Compute Project），在微软 Build 大会上成立.NET 基金会，全力支持 .NET 平台上的开源研发与合作。
+
+![](http://img.blog.csdn.net/20170620111527348)
+
+2015 年，微软通过与 credativ 合作，将最流行的 Linux 发行版之一的 Debian 带到了它的 Azure 上。同年与 Red Hat 达成合作，将 Red Hat 企业版 Linux（RHEL）带到了 Azure 云上。
+
+同在 2015 年，微软还开源了 Visual Studio Code， 并且发布了 Visual Studio GDB 预览版，允许开发者远程调试 Linux 对象。
+
+2016 年初，微软和 Canonical 展示了在 Azure 上运行 Ubuntu Linux 的第一个技术预览版。至此，微软已经将所有的领先的 Linux 发行版带到了 Azure 云上。
+
+同年 3 月，在 EclipseCon 大会上，微软宣布加入 Eclipse 基金会，在 11 月的 Connect 开发者大会上，微软公司加入 Linux 基金会成为第 11 位白金会员，取得董事会席位，同时也宣布 Google 加入微软 .NET 开源基金会。
+
+且在 6 月的 Red Hat DevNation 大会上，微软正式发布实现跨平台（Windows、Linux 和 Mac）的 [.NET Core 1.0](http://blog.csdn.net/tangxiaoyin/article/details/51776619) ，这意味着开发者可以使用 Windows 开发，用 Linux 部署。
+
+9 月，在 GitHub 的“对开源贡献人数最多的组织（Organizations with the most open source contributors）”的榜单中，微软击败 Facebook、Google 一跃成为 No.1，至此，微软彻底赢得了来自业界及开源社区的认可。
+
+而到了今年，微软在开源领域已经有了诸多动作，比如开源 GVFS (Git Virtual File System) 虚拟文件系统、Azure Service Fabric SDK、用于帮助开发者创建跨平台应用的 ReactXP，以及可用于训练无人机和自动驾驶汽车的模拟器平台 AirSim 等。
+
+在《[开源纵横谈：微软开源那些事儿](http://gitbook.cn/books/58ee980e9e7323260a782320/index.html)》一文中，作者[杜玉杰](https://about.me/yujie.du)如此总结道：“对企业来说开源作为一个武器，无论是进攻还是防御，首先要考虑的都应该是商业的利益。微软帝国从 PC 时代崛起，经历了互联网时代的短暂迷惘，新的君主能够领悟到了开源的价值，转变战略乘云之势重回宝座不得不说是企业开源战略转型的一个典范。”
+
+而从技术角度出发，我们又不禁想问，开源对于微软究竟产生了怎样的影响？Erich Gamma 给出了他的答案：
+
+> 开源的发展速度非常惊人，尤其是微软。五年前谈到开源时，整个 Windows 没有什么开源的东西。这五年来我们发生了很大的变化，现在微软内部也有了很多流程与方法，能够让我们的工程团队去使用开源。
+
+> 五年前，我们的律师一听到开源，第一反应就说“NO”，但现在律师也在帮助我们更好地往开源上做努力了。我们知道开源领域有很多争议，特别是 License 的部分，有些“License”也许存在一些灰色地带。然而在微软，我们的工程部门和法律部门都在帮助我们更加合规地做开源项目，比如 GPL。现在，在他们的帮助下，我们能够清楚地了解哪些是我们可以使用的。
+
+> 虽然是开源，但事实上对微软对我们所提供的开源软件是负责任的。微软对开源技术的运用横跨多个不同的产品线。我们内部对整个开源的软件都做了详细的记录，来帮助开发者和产品团队，让他们避免陷入到一些 License 问题里。我们很多开源的软件都有数据库去记录它用在哪个产品里，能够实现正向和反向的追踪。比如有的开源软件造成一些问题，我们可以很清楚地对相关产品进行迅速准确的修正。
+
+> 而说到影响，我所看到的最大的贡献便是来自于效率的提升。比如当我们把 .Net Core 开源之后，有诸多来自社区的人帮助我们审阅代码，给出了很多改进意见。同时，许多开发者会希望能不能实现让 .Net Core 在其他平台上运行，我们可以看到在这方面很多的尝试。
