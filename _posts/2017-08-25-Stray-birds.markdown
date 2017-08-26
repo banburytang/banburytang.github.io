@@ -5,7 +5,7 @@ date: 2017-08-25 09:30:00.000000000 +09:00
 tags: 诗歌密室
 ---
 
-> 优美的旋律🎶，优美的诗，优美的声。<br></br>
+> 优美的旋律🎶，优美的诗，优美的声。<br>
 > [播放地址](http://dict.eudic.net/webting/Play?id=0f8f0045-d1ef-441f-b610-0dad9a2c02b6)
 
 Stray birds of summer come to my window to sing and fly away.
